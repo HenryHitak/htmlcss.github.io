@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>Contact</title>
+</head>
+<body>
+    <!-- HEADER IS WHITE WITH BORDER -->
+    <header>
+        <h1>
+        Tamwood PC Repair
+        </h1>
+        <div class="video-header">
+            <video autoplay loop muted>
+                <source src="./video/video.mp4" type="video/mp4">
+            </video>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="table.html">RECEIPT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <main class="contact-form">
+        <fieldset class="form">
+            <form method="post" action="thankyou.html">
+                <div class="name">
+                    <p>Your info</p>
+                    <br>
+                    <label for="firstname">First name:</label>
+                    <input type="text" id="firstname" name="firstname">
+                    <label for="lastname">Last name:</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+                <br>
+                <p>Device type:</p>
+                <div class="device">
+                    <input type="radio" name="device" value="pc">
+                    <label for="pc" id="pc">PC</label>
+                    <input type="radio" name="device" value="laptop">
+                    <label for="laptop" id="laptop">Laptop</label>
+                </div>
+                <br>
+                <div class="model">
+                    <p>Model:</p>
+                    <select name="Model">
+                        <optgroup label="Model">
+                            <option>Asus</option>
+                            <option>Gigabyte</option>
+                            <option>Apple</option>
+                            <option>Samsung</option>
+                            <option>LG</option>
+                            <option>Lenovo</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+                <div class="time">
+                    <label for="date" id="date">Requested Date:</label>
+                    <input type="date">
+                    <input type="time">
+                </div>
+                <br>
+                <fieldset class="repair">
+                    <legend>Repair type</legend>
+                    <div>
+                        <input type="checkbox" value="review">
+                        <label for="radio" id="review">Review</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="change">
+                        <label for="radio" id="change">Part Change</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="upgrade">
+                        <label for="radio" id="upgrade">Upgrade</label>
+                    </div>
+                </fieldset>
+                <br>
+                <div class="comment">
+                    <label for="comment" style="font-size: 20px;">Comment:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+                <br>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset" id="reset">
+                </div>
+            </form>
+            <br>
+        </fieldset>
+    </main>
+    <footer>
+        &copy; Copyright all reserved by Hitak Lee
+    </footer>
+</body>
+</html>
